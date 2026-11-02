@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #0b1120, #172554);
+        color: white;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .profile-container {
+        width: 100%;
+        max-width: 850px;
+        background: rgba(255, 255, 255, 0.07);
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: 20px;
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        box-shadow: 0 15px 50px rgba(0,0,0,0.4);
+    }
+
+    .profile-image {
+        width: 230px;
+        height: 290px;
+        flex-shrink: 0;
+        border: 2px dashed #60a5fa;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #93c5fd;
+        background: rgba(255,255,255,0.04);
+        overflow: hidden;
+    }
+
+    .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile-info {
+        flex: 1;
+    }
+
+    .profile-info .subtitle {
+        color: #60a5fa;
+        font-size: 14px;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+    }
+
+    .profile-info h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .profile-info h2 {
+        font-size: 17px;
+        font-weight: normal;
+        color: #93c5fd;
+        margin-bottom: 25px;
+    }
+
+    .line {
+        width: 60px;
+        height: 4px;
+        background: #3b82f6;
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+
+    .detail {
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .detail span {
+        display: block;
+        color: #93c5fd;
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .detail p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .footer {
+        margin-top: 25px;
+        color: #94a3b8;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    @media (max-width: 650px) {
+        .profile-container {
+            flex-direction: column;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 250px;
+        }
+
+        .line {
+            margin: 20px auto;
+        }
+
+        .profile-info h1 {
+            font-size: 25px;
+        }
+    }
+</style>
+
+<div class="profile-container">
+
+    <!-- ช่องสำหรับใส่รูปภาพ -->
+    <div class="profile-image">
+       <img src="myphoto.jpg" alt="รูปภาพส่วนตัว">
+    </div>
+
+    <!-- ข้อมูลประวัติส่วนตัว -->
+    <div class="profile-info">
+
+        <div class="subtitle">PERSONAL PROFILE</div>
+
+        <h1>นาย พรพิพัฒน์ รักดี</h1>
+
+        <h2>นักเรียนแผนกเทคโนโลยีสารสนเทศ</h2>
+
+        <div class="line"></div>
+
+        <div class="detail">
+            <span>FULL NAME</span>
+            <p>นาย พรพิพัฒน์ รักดี</p>
+        </div>
+
+        <div class="detail">
+            <span>AGE</span>
+            <p>18 ปี</p>
+        </div>
+
+        <div class="detail">
+            <span>EDUCATIONAL INSTITUTION</span>
+            <p>วิทยาลัยอาชีวศึกษานครศรีธรรมราช</p>
+        </div>
+
+        <div class="detail">
+            <span>DEPARTMENT</span>
+            <p>แผนกเทคโนโลยีสารสนเทศ</p>
+        </div>
+
+        <div class="footer">
+            ABOUT ME • PERSONAL INFORMATION
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
